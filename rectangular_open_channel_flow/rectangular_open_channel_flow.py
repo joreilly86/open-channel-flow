@@ -5,8 +5,6 @@ from tabulate import tabulate
 
 st.title('Rectangular Open Channel Flow 🌊')
 
-st.image('image.jpg',  width=500, caption='Manning\'s Formula.')
-
 st.markdown("""
 This app calculates the capacity and depth of flow in a rectangular open channel using Manning's equation.
 The default n value is 0.013, which is the value for concrete channels.
