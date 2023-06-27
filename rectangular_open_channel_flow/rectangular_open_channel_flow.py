@@ -69,7 +69,12 @@ def flow_depth(b=3.0, z = 2, slope = 0.03, Q_design = 10, dy=0.01, n = 0.013):
 
 # Create user inputs for channel width, side slope, slope, and design flow rate, and optional dy value
 b = st.number_input('Enter the channel bottom width in meters:', min_value=0.01)
-n = st.number_input('Enter the Manning\'s roughness coefficient (optional, default is 0.013):', min_value=0.0001, value=0.013)
+n = st.number_input(
+    'Enter the Manning\'s roughness coefficient (optional, default is 0.013):',
+    min_value=0.0001,
+    value=0.013,
+    format="%.3f"
+)
 slope = st.number_input('Enter the slope of the channel (m/m):', min_value=0.01)
 Q_design = st.number_input('Enter the design flow rate (m^3/s):', min_value=0.01)
 dy = st.number_input('Enter the increment for flow depth (optional, default is 0.01m):', min_value=0.001, value=0.01)
