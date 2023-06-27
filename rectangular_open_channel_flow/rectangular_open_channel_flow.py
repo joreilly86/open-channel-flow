@@ -100,8 +100,8 @@ fig, ax = plt.subplots()
 ax.plot([i[0] for i in depth_flow], [i[1] for i in depth_flow])
 ax.set_xlabel('Depth (m)')
 ax.set_ylabel('Flow rate (m^3/s)')
-ax.set_title('Depth/Flow Curve')
-ax.annotate(f'Channel Bottom Width = {b:.2f} H:V\nSlope = {slope*100:.0f} %', 
+ax.set_title('Depth/Flow Curve for Rectangular Open Channel')
+ax.annotate(f'Channel Bottom Width = {b:.2f} m\nSlope = {slope*100:.0f} %', 
             xy=(0.05, 0.95), 
             xycoords='axes fraction', 
             fontsize=10, 
